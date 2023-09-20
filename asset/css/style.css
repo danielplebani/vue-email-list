@@ -15,9 +15,21 @@ h1{
     font-size: 75px;
 }
 
+button{
+    margin-left: 17%;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(142, 13, 13);  
+    background-color: orangered;
+    border: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .card{
     width: 25%;
-    margin-left: 10%;
-    box-shadow: 8px 8px 8px rgb(255, 179, 39);
+    margin-left: 12%;
+    box-shadow: 8px 8px 8px rgb(142, 13, 13);  
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

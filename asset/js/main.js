@@ -5,6 +5,7 @@ createApp({
     return {
       randomEmail: [],
       printTogether: 0,
+      buttonClicked: false
     }
   },
 
@@ -23,6 +24,10 @@ createApp({
           console.log('errore!!! fai attenzione', error);
         })
       }  
+    },
+
+    clickButton(){
+      this.buttonClicked = true
     }
       
   },

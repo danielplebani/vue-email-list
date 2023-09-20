@@ -21,11 +21,13 @@
     <div id="app">
 
       <div class="container">
-        <h1 class="py-5">
+        <h1 class="pt-5 pb-3">
           EMAIL RANDOM LIST
         </h1>
         
-        <div class="card border-0">
+        <button @click="clickButton"><strong><em>GENERATES 10 EMAIL</em></strong></button>
+
+        <div class="card border-0" v-if="buttonClicked">
           <ol class="list-group list-group-numbered border-0" v-if="printTogether == 10">
             <li class="list-group-item bg-warning bg-gradient border-0" v-for="email in randomEmail"><em>{{email}}</em></li>
           </ol>
