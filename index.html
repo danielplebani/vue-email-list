@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>random email list</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"     rel="stylesheet">
+
     <!--bootstrap-css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--fontAwesome-css-->
@@ -17,10 +21,16 @@
     <div id="app">
 
       <div class="container">
-        <h1 class="p-3">EMAIL RANDOM LIST</h1>
-        <ol v-if="printTogether == 10">
-          <li v-for="email in randomEmail">{{email}}</li>
-        </ol>
+        <h1 class="py-5">
+          EMAIL RANDOM LIST
+        </h1>
+        
+        <div class="card border-0">
+          <ol class="list-group list-group-numbered border-0" v-if="printTogether == 10">
+            <li class="list-group-item bg-warning bg-gradient border-0" v-for="email in randomEmail"><em>{{email}}</em></li>
+          </ol>
+        </div>
+
       </div>
       
     </div>
