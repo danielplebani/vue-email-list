@@ -18,7 +18,7 @@
 
       <div class="container">
         <h1 class="p-3">EMAIL RANDOM LIST</h1>
-        <ol>
+        <ol v-if="printTogether == 10">
           <li v-for="email in randomEmail">{{email}}</li>
         </ol>
       </div>
