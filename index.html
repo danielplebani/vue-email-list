@@ -7,43 +7,59 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet">
 
     <!--bootstrap-css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
     <!--fontAwesome-css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--myProject-css-->
     <link rel="stylesheet" href="./asset/css/style.css">
   </head>
   <body>
-    
+
     <div id="app">
 
       <div class="container">
         <h1 class="pt-5 pb-3">
           EMAIL RANDOM LIST
         </h1>
-        
-        <button @click="clickButton"><strong><em>GENERATES 10 EMAIL</em></strong></button>
+
+        <button @click="clickButton"><strong><em>GENERATES 10
+              EMAIL</em></strong></button>
 
         <div class="card border-0" v-if="buttonClicked">
-          <ol class="list-group list-group-numbered border-0" v-if="printTogether == 10">
-            <li class="list-group-item bg-warning bg-gradient border-0" v-for="email in randomEmail"><em>{{email}}</em></li>
+          <ol class="list-group list-group-numbered border-0"
+            v-if="randomEmail.length == 10">
+            <li class="list-group-item bg-warning bg-gradient border-0"
+              v-for="email in randomEmail"><em>{{email}}</em></li>
           </ol>
         </div>
 
       </div>
-      
+
     </div>
 
-
-
+    <!-- prova -->
 
     <!--axios-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js" integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--boostrap-js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
     <!--vue-js-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!--myProject-js-->

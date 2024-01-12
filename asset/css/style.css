@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(../img/pexels-chevanon-photography-325044.jpg);
+    background-image: url(/asset/img/pexels-chevanon-photography-325044.jpg);
     background-size: cover;
     background-position: left 250px top -120px;
 }
